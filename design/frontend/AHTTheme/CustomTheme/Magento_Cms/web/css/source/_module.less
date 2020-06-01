@@ -5,6 +5,9 @@
                 position: absolute;
                 bottom: 30px;
                 left: 50%;
+                & .owl-dot{
+                    box-shadow: none;
+                }
             }
             & .owl-nav{
                 & .owl-prev, .owl-next {
@@ -29,6 +32,7 @@
             }
             & .item {
                 & .content-slide {
+                    background-size: cover;
                     & .text {
                         box-sizing: border-box;
                         margin-left: auto;
@@ -57,8 +61,52 @@
                             color: @main-color;
                             padding-left: 10px;
                         }
+                        & button{
+                            padding: 20px;
+                            margin-top: 9rem;
+                        }
                     }
                 }
+            }
+        }
+    }
+
+    .ads{
+        & img{
+            width: 100%;
+        }
+        & .right{
+            & .top{
+                margin-bottom: 30px;
+            }
+        }
+        & .center{
+            font-size: 30px;
+            & .women{
+                letter-spacing: 0.05em;
+            }
+            & .fashion{
+                letter-spacing: 0.2em;
+            }
+        }
+        & .left{
+            & .content{
+                position: absolute;
+                top: 45px;
+                left: 60px;
+                & .big{
+                    font-size: 24px;
+                    color: #666666;
+                }
+            }
+            & .new{
+                position: absolute;
+                top: 94px;
+                right: 83px;
+                color: white;
+                background-color: #2ea76f;
+                padding: 22px 15px;
+                border-radius: 50%;
             }
         }
     }
