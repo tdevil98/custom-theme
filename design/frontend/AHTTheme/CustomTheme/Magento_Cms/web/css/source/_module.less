@@ -1,5 +1,6 @@
 & when (@media-common =true) {
     & .banner-top {
+        margin-bottom: 20px;
         & .owl-carousel {
             & .owl-dots{
                 position: absolute;
@@ -72,21 +73,23 @@
     }
 
     .ads{
+        margin-top: 20px;
         & img{
             width: 100%;
         }
-        & .right{
-            & .top{
-                margin-bottom: 30px;
-            }
-        }
         & .center{
             font-size: 30px;
-            & .women{
-                letter-spacing: 0.05em;
-            }
-            & .fashion{
-                letter-spacing: 0.2em;
+            & .content{
+                position: absolute;
+                top: 30%;
+                left: 25%;
+                & .women{
+                    margin-bottom: 0;
+                    letter-spacing: 0.05em;
+                }
+                & .fashion{
+                    letter-spacing: 0.2em;
+                }
             }
         }
         & .left{
@@ -97,16 +100,64 @@
                 & .big{
                     font-size: 24px;
                     color: #666666;
+                    display: block;
                 }
             }
             & .new{
                 position: absolute;
                 top: 94px;
-                right: 83px;
+                right: 100px;
                 color: white;
                 background-color: #2ea76f;
                 padding: 22px 15px;
                 border-radius: 50%;
+            }
+        }
+        & .right{
+            & .top{
+                margin-bottom: 30px;
+                & .sale{
+                    position: absolute;
+                    padding: 20px 15px;
+                    border-radius: 50%;
+                    background-color: @main-color;
+                    color: white;
+                    top: 10%;
+                    left: 15%;
+                }
+            }
+            & .bot{
+                position: relative;
+                & .content{
+                    position: absolute;
+                    top: 15%;
+                    left: 20%;
+                    & .shoes{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .trending{
+        & .header{
+            text-align: center;
+            position: relative;
+            & i{
+                font-size: 30px;
+                color: #b4b4b4;
+            }
+            & .year{
+                font-size: 80px;
+                color: #b4b4b4;
+            }
+            & .trend{
+                font-size: 18px;
+                position: absolute;
+                top: 50px;
+                left: 43%;
+                background-color: white;
+                letter-spacing: 0.5em;
             }
         }
     }

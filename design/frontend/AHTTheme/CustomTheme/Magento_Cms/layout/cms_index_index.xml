@@ -9,6 +9,9 @@
             <container name="ads" htmlTag="div" htmlClass="top-container ads">
                 <block class="Magento\Framework\View\Element\Template" template="Magento_Cms::ads.phtml" />
             </container>
+            <container name="trending" htmlTag="div" htmlClass="top-container trending">
+                <block class="Magento\Framework\View\Element\Template" template="Magento_Cms::trending.phtml" />
+            </container>
         </referenceContainer>
         <referenceContainer name="columns.top">
             <referenceBlock name="page.main.title" remove="true" />
