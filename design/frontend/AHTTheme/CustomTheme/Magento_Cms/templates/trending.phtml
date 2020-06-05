@@ -1,18 +1,26 @@
+<div class="header">
+    <p><span class="year"> 2016 </span></p>
+    <p class="trend"><i class="fas fa-align-right"></i><strong> TRENDING </strong><i class="fas fa-align-left"></i></p>
+</div>
+<div class="tab">
+    <a href="#"><i class="fas fa-check"></i> BEST SELLER</a><a href="#"><i class="fas fa-times"></i> ON SALE</a><a href="#"><i class="fas fa-times"></i> MOST VIEWED</a>
+</div>
 <?php
     echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('trending-block')->toHtml();
 ?>
-<!-- <script>
+<script>
     require([
         'jquery',
         'owlcarousel'
     ], function ($) {
         $(document).ready(function () {
-            $('.product-grid').owlCarousel({
+            $(".product-list").owlCarousel({
                 loop:true,
-                nav:true,
+                items: 4,
                 responsiveClass:true,
-                itemClass: 'product-item'
-            })
+                nav:true,
+                dots: false
+            });
         });
     });
-</script> -->
+</script>

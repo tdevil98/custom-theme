@@ -1,0 +1,12 @@
+<div class="top-container row">
+    <div class="col-8">
+        <?php
+            echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('img-hot-deal-block')->toHtml();
+        ?>
+    </div>
+    <div class="col-4">
+        <?php
+            echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('content-hot-deal-block')->toHtml();
+        ?>
+    </div>
+</div>

@@ -155,10 +155,86 @@
                 font-size: 18px;
                 position: absolute;
                 top: 50px;
-                left: 43%;
+                left: 40%;
                 background-color: white;
                 letter-spacing: 0.5em;
             }
         }
+        & .tab{
+            text-align: center;
+            margin-bottom: 30px;
+            padding-top: 30px;
+            border-top: 1px solid gray;
+            & a{
+                margin: 30px;
+                color: #666666;
+                &:hover{
+                    color: @main-color;
+                }
+            }
+        }
+        & .product{
+            & .product-list{
+                & .owl-nav{
+                    & .owl-prev, .owl-next {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 50px;
+                        color: #666666;
+                    }
+                    & .owl-prev {
+                        left: -5rem;
+                        &:hover{
+                            background-color: unset;
+                        }
+                    }
+                    & .owl-next {
+                        right: -5rem;
+                        &:hover{
+                            background-color: unset;
+                        }
+                    }
+                }
+                & .item{
+                    text-align: center;
+                    & .product-item-info:hover{
+                        box-shadow: none;
+                        border: 1px solid @main-color;
+                        margin: 0;
+                        padding: 0;
+                        .product-item-inner{
+                            box-shadow: none;
+                            border: none;
+                            top: 50%;
+                            background: unset;
+                            left: unset;
+                            .tocart{
+                                position: absolute;
+                                right: 0;
+                                width: max-content;
+                                background: rgba(255,102,51, 0.8);
+                                color: white;
+                            }
+                        }
+                    }
+                    
+                    & .product-item-detail{
+                        & .rating-summary{
+                            & .rating-result{
+                                span{
+                                    &:before{
+                                        color: #ffae00;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hot-deal{
+        background-color: #ededed;
     }
 }
