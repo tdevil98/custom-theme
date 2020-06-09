@@ -1,0 +1,21 @@
+<div class="image">
+    <?php
+    echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('img-newsletter-block')->toHtml();
+    ?>
+</div>
+<div class="left-content">
+    <?php
+    echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('left-newsletter-block')->toHtml();
+    ?>
+    <div class="input-group">
+        <input placeholder="Enter your email address..." class="form-control">
+        <span class="input-group-btn">
+            <button class="btn">OK</button>
+        </span>
+    </div>
+</div>
+<div class="mid-content">
+    <?php
+    echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('mid-newsletter-block')->toHtml();
+    ?>
+</div>

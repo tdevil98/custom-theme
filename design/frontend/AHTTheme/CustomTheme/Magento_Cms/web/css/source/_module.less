@@ -235,6 +235,234 @@
         }
     }
     .hot-deal{
-        background-color: #ededed;
+        background: radial-gradient(#e7dfd8, #eeeeea, #ededed);
+        & .deal-content{
+            & .image{
+                & p{
+                    margin-bottom: 0;
+                }
+                & img{
+                    width: 100%;
+                }
+            }
+            & .content{
+                margin-top: 115px;
+                & .today{
+                    font-size: 18px;
+                    color: @main-color;
+                    margin-bottom: 13px;
+                }
+                & .bag{
+                    font-size: 30px;
+                    margin-bottom: 23px;
+                }
+                & .description{
+                    font-size: 13px;
+                    margin-bottom: 22px;
+                }
+                & .price{
+                    font-size: 24px;
+                    & .sale{
+                        color: @main-color;
+                    }
+                    & .original{
+                        text-decoration: line-through;
+                        color: #999999;
+                    }
+                }
+                & .icon{
+                    margin-bottom: 65px;
+                    & i{
+                        color: #adadad;
+                        padding: 10px;
+                        background-color: white;
+                        border: gray 1px solid;
+                    }
+                }
+                & .countdown{
+                    & .time{
+                        display: inline-block;
+                        text-align: center;
+                        margin-right: 7px;
+                        p{
+                            font-size: 18px;
+                        }
+                        p:not(.number){
+                            margin-bottom: 21px;
+                            font-size: 12px;
+                        }
+                        & .number{
+                            color: white;
+                            & strong{
+                                border: white 1px solid;
+                                background-color: black;
+                                padding: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .new-product{
+        & .header{
+            text-align: center;
+            position: relative;
+            & i{
+                font-size: 30px;
+                color: #b4b4b4;
+            }
+            & .year{
+                font-size: 80px;
+                color: #b4b4b4;
+            }
+            & .trend{
+                font-size: 18px;
+                position: absolute;
+                top: 50px;
+                left: 40%;
+                background-color: white;
+                letter-spacing: 0.5em;
+            }
+        }
+        & .tab{
+            text-align: center;
+            margin-bottom: 30px;
+            padding-top: 30px;
+            border-top: 1px solid gray;
+            & a{
+                margin: 30px;
+                color: #666666;
+                &:hover{
+                    color: @main-color;
+                }
+            }
+        }
+        & .product{
+            & .product-list{
+                & .owl-nav{
+                    & .owl-prev, .owl-next {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 50px;
+                        color: #666666;
+                    }
+                    & .owl-prev {
+                        left: -5rem;
+                        &:hover{
+                            background-color: unset;
+                        }
+                    }
+                    & .owl-next {
+                        right: -5rem;
+                        &:hover{
+                            background-color: unset;
+                        }
+                    }
+                }
+                & .item{
+                    text-align: center;
+                    & .product-item-info:hover{
+                        box-shadow: none;
+                        border: 1px solid @main-color;
+                        margin: 0;
+                        padding: 0;
+                        .product-item-inner{
+                            box-shadow: none;
+                            border: none;
+                            top: 50%;
+                            background: unset;
+                            left: unset;
+                            .tocart{
+                                position: absolute;
+                                right: 0;
+                                width: max-content;
+                                background: rgba(255,102,51, 0.8);
+                                color: white;
+                            }
+                        }
+                    }
+                    
+                    & .product-item-detail{
+                        & .rating-summary{
+                            & .rating-result{
+                                span{
+                                    &:before{
+                                        color: #ffae00;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .newsletter{
+        position: relative;
+        & .image{
+            & p{
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+        & .left-content{
+            position: absolute;
+            text-align: center;
+            left: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30%;
+            & .news{
+                font-size: 24px;
+                color: @main-color
+            }
+            & .subscribe{
+                font-size: 13px;
+            }
+            & .input-group{
+                padding: 15px 20px;
+                background-color: white;
+                & .form-control, .btn{
+                    font-size: unset;
+                    border: none;
+                }
+                & .form-control:focus{
+                    border: none;
+                    box-shadow: none;
+                }
+                & .btn{
+                    box-shadow: unset;
+                    background-color: white;
+                    border-left: gray 1px solid;
+                    border-radius: unset;
+                }
+            }
+        }
+        & .mid-content{
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            & p:not(.percent){
+                line-height: 0;
+            }
+            .sale, .percent{
+                color: @main-color;
+            }
+            & .sale{
+                font-size: 30px;
+            }
+            & .percent{
+                font-size: 100px;
+                line-height: 1;
+            }
+            & .next{
+                font-size: 18px;
+            }
+        }
     }
 }

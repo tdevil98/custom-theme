@@ -12,8 +12,17 @@
             <container name="trending" htmlTag="div" htmlClass="top-container trending">
                 <block class="Magento\Framework\View\Element\Template" template="Magento_Cms::trending.phtml" />
             </container>
-            <container name="hot-deal" htmlTag="div" htmlClass="hot-deal" after="trending">
+            <container name="hot-deal" htmlTag="div" htmlClass="hot-deal">
                 <block class="Magento\Framework\View\Element\Template" template="Magento_Cms::hot-deal.phtml" />
+            </container>
+            <container name="new-product" htmlTag="div" htmlClass="top-container new-product">
+                <block class="Magento\Framework\View\Element\Template" template="Magento_Cms::new-product.phtml" />
+            </container>
+            <container name="newsletter" htmlTag="div" htmlClass="newsletter top-container">
+                <block class="Magento\Framework\View\Element\Template" template="Magento_Cms::newsletter.phtml" />
+            </container>
+            <container name="brands" htmlTag="div" htmlClass="brands top-container">
+                <block class="Magento\Framework\View\Element\Template" template="Magento_Cms::brands.phtml" />
             </container>
         </referenceContainer>
         <referenceContainer name="columns.top">
