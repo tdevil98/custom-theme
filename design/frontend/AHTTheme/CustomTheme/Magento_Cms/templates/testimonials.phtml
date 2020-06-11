@@ -1,0 +1,34 @@
+<div class="image">
+    <?php
+        echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('img-testimonials-block')->toHtml();
+    ?>
+</div>
+<div class="testimonials-content">
+	<div class="header-testimonials">
+		<p class="title-testimonials">TESTIMONIALS</p>
+		<p>Customer & Partner talk about us!</p>
+		<hr>
+	</div>
+    <?php
+        echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('testimonial-block')->toHtml();
+    ?>
+</div>
+<div class="quote">
+    <span>"</span>
+</div>
+<script>
+    require([
+        'jquery',
+        'owlcarousel'
+    ], function($) {
+        $(document).ready(function() {
+            $(".testimonials-content").owlCarousel({
+                loop: true,
+                items: 1,
+                responsiveClass: true,
+                nav: true,
+                dots: false
+            });
+        });
+    });
+</script>

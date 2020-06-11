@@ -1,15 +1,15 @@
 <div class="header">
-    <p><span class="top"> TOP </span></p>
-    <p class="brands"><i class="fas fa-align-right"></i><strong> BRANDS </strong><i class="fas fa-align-left"></i></p>
+    <p><span class="year"> TOP </span></p>
+    <p class="trend"><i class="fas fa-align-right"></i><strong> BRANDS </strong><i class="fas fa-align-left"></i></p>
 </div>
-<div class="brands">
+<div class="tab brands">
     <?php
     echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('brands-block')->toHtml();
     ?>
 </div>
 <div class="product">
     <?php
-    echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('trending-block')->toHtml();
+    echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('products-brand-block')->toHtml();
     ?>
 </div>
 <script>
