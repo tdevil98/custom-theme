@@ -9,12 +9,11 @@
 		<p>Customer & Partner talk about us!</p>
 		<hr>
 	</div>
-    <?php
-        echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('testimonial-block')->toHtml();
-    ?>
-</div>
-<div class="quote">
-    <span>"</span>
+    <div class="testimonials-slide owl-carousel owl-theme">
+        <?php
+            echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('testimonial-block')->toHtml();
+        ?>
+    </div>
 </div>
 <script>
     require([
@@ -22,7 +21,7 @@
         'owlcarousel'
     ], function($) {
         $(document).ready(function() {
-            $(".testimonials-content").owlCarousel({
+            $(".testimonials-slide").owlCarousel({
                 loop: true,
                 items: 1,
                 responsiveClass: true,
