@@ -27,6 +27,9 @@
             <container name="testimonials" htmlTag="div" htmlClass="testimonials">
                 <block class="Magento\Framework\View\Element\Template" template="Magento_Cms::testimonials.phtml" />
             </container>
+            <container name="suggest" htmlTag="div" htmlClass="suggest top-container">
+                <block class="Magento\Framework\View\Element\Template" template="Magento_Cms::suggest.phtml" />
+            </container>
         </referenceContainer>
         <referenceContainer name="columns.top">
             <referenceBlock name="page.main.title" remove="true" />

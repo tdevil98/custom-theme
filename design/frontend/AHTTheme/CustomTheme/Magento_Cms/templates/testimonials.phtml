@@ -1,19 +1,17 @@
 <div class="image">
     <?php
-        echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('img-testimonials-block')->toHtml();
+    echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('img-testimonials-block')->toHtml();
     ?>
 </div>
-<div class="testimonials-content">
-	<div class="header-testimonials">
-		<p class="title-testimonials">TESTIMONIALS</p>
-		<p>Customer & Partner talk about us!</p>
-		<hr>
-	</div>
-    <div class="testimonials-slide owl-carousel owl-theme">
-        <?php
-            echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('testimonial-block')->toHtml();
-        ?>
-    </div>
+<div class="header-testimonials">
+    <p class="title-testimonials">TESTIMONIALS</p>
+    <p>Customer & Partner talk about us!</p>
+    <hr>
+</div>
+<div class="testimonials-slide owl-carousel owl-theme">
+    <?php
+    echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('testimonial-block')->toHtml();
+    ?>
 </div>
 <script>
     require([
